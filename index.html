@@ -24,7 +24,7 @@
           </a>
           <ul class="site-nav list">
             <li class="header-item">
-              <a href="./index.html" class="link active">Студія</a>
+              <a href="./index.html" class="link active current">Студія</a>
             </li>
             <li class="header-item">
               <a href="./portfolio.html" class="link">Портфоліо</a>
@@ -61,7 +61,9 @@
         <div class="container">
           <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
           <div class="center">
-            <button type="button" class="btn">Замовити послугу</button>
+            <button type="button" class="btn" data-modal-open>
+              Замовити послугу
+            </button>
           </div>
         </div>
       </section>
@@ -128,14 +130,17 @@
         <div class="container">
           <h2 class="work-title">Чим ми займаємося</h2>
           <ul class="work-list list">
-            <li>
+            <li class="work-item">
               <img src="./images/box1.jpg" alt="картинка" width="370" />
+              <h3 class="work-caption">декстопні додатки</h3>
             </li>
-            <li>
+            <li class="work-item">
               <img src="./images/box2.jpg" alt="картинка" width="370" />
+              <h3 class="work-caption">мобільні додатки</h3>
             </li>
-            <li>
+            <li class="work-item">
               <img src="./images/box3.jpg" alt="картинка" width="370" />
+              <h3 class="work-caption">дезайнерські рішення</h3>
             </li>
           </ul>
         </div>
@@ -422,6 +427,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button tupe="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-svg" width="11" height="11">
+            <use href="./images/symbol-defs.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
