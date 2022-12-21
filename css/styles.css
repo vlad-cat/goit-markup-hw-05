@@ -171,9 +171,7 @@ address {
   color: var(--text-white-color);
   background-color: var(--text-hover-color);
   border: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,
@@ -286,7 +284,7 @@ address {
   letter-spacing: 0.02em;
 
   color: var(--primary-text-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-header a:hover,
@@ -321,7 +319,7 @@ address {
   text-decoration: none;
 
   color: var(--text-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -745,6 +743,7 @@ address {
 .modal {
   width: 528px;
   min-height: 581px;
+  max-height: 90vh;
   background-color: var(--text-white-color);
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
@@ -752,7 +751,7 @@ address {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1) rotate(0);
+  transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
